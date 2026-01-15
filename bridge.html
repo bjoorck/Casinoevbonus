@@ -1,256 +1,260 @@
 <!DOCTYPE html>
-<html lang="sv">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bridge System – Budgivning</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0; padding: 0;
-      background: #f5f5f5;
-    }
-    header {
-      background: #334488;
-      color: white;
-      text-align: center;
-      padding: 20px 10px;
-    }
-    nav {
-      background: #222;
-      padding: 10px;
-      text-align: center;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 15px;
-      font-weight: bold;
-    }
-    main {
-      max-width: 1000px;
-      margin: auto;
-      background: white;
-      padding: 20px;
-    }
-    h2 {
-      color: #334488;
-      border-bottom: 2px solid #334488;
-      padding-bottom: 6px;
-      margin-top: 45px;
-    }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 15px;
-    }
-    table, th, td {
-      border: 1px solid #ccc;
-    }
-    th, td {
-      padding: 10px;
-      text-align: left;
-    }
-    /* Gör kolumnen "Svarsbud" bredare */
-    td:nth-child(3), th:nth-child(3) {
-      width: 43%;
-    }
-    footer {
-      background: #334488;
-      color: white;
-      padding: 10px;
-      text-align: center;
-      margin-top: 30px;
-    }
-    td {
-  line-height: 1.5em; /* mer vertikal luft i tabellcellerna */
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>1♣ – Bridge System</title>
+
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f5f5f5;
 }
-  </style>
+header {
+  background: #334488;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+nav {
+  background: #222;
+  padding: 10px;
+  text-align: center;
+}
+nav a {
+  color: white;
+  margin: 0 12px;
+  text-decoration: none;
+  font-weight: bold;
+}
+main {
+  max-width: 1100px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+}
+h2 {
+  color: #334488;
+  border-bottom: 2px solid #334488;
+  padding-bottom: 6px;
+  margin-top: 45px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  vertical-align: top;
+}
+th {
+  background: #eee;
+}
+footer {
+  background: #334488;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 40px;
+}
+.small {
+  font-size: 0.9em;
+}
+.red {
+  color: darkred;
+  font-weight: bold;
+}
+</style>
 </head>
+
 <body>
 
 <header>
-  <h1>Bridge System – Budgivning</h1>
+<h1>Bridge System – 1♣ (Uncontested)</h1>
 </header>
 
 <nav>
-  <a href="bridge.html">Öppningar</a>
-  <a href="1c.html">1♣</a>
-  <a href="1d.html">1♦</a>
-  <a href="1h.html">1♥</a>
-  <a href="1s.html">1♠</a>
-  <a href="1nt.html">1NT</a>
-  <a href="2c.html">2♣</a>
-  <a href="2d.html">2♦</a>
-  <a href="2hs.html">2♥/2♠</a>
-  <a href="2nt.html">2NT</a>
+<a href="bridge.html">Openings</a>
+<a href="1c.html">1♣</a>
+<a href="1d.html">1♦</a>
+<a href="1h.html">1♥</a>
+<a href="1s.html">1♠</a>
+<a href="1nt.html">1NT</a>
 </nav>
-
 
 <main>
 
-  <h2 id="openings">Öppningar</h2>
-  <p>
-    Kortklöver, 5-korts högfärg, 14–16 1NT, stark 2♣.<br>
-    ✅ I <strong>3:e och 4:e hand</strong> kan öppning göras på <strong>(9)10+ HCP</strong>.
-  </p>
+<!-- ================= OPENING ================= -->
 
-  <table>
-    <tr>
-      <th>Bud</th>
-      <th>Innebörd</th>
-      <th>Svarsbud</th>
-    </tr>
+<h2>Opening 1♣ = 1+♣ 12-22hcp (3rd/4th pos. 10-22) – Responses</h2>
 
-<tr id="1c">
-  <td>1♣</td>
-  <td>1+ klöver, 12–22 HCP</td>
-  <td>
-    1♦ = 0–5 HCP (negativt)<br>
-        1♥ / 1♠ = 4+, 6+ HCP (kan ha längre ♣/♦ om ej utgångskrav)<br>
-        1NT = 6–9 HCP, förnekar 4♥/♠ och lovar ej balanserad hand<br>
-        2♣ / 2♦ = 4+ GF (kan ha 4♥/♠)<br>
-        <span style="color: red;">2♥ = exakt 5♣, invit, kan ha 5♦, förnekar 4♥/♠<br>
-        2♠ = exakt 5♦, invit, förnekar 4♥/♠/5♣<br></span>
-        2NT = invit, 3343/3334/2344/3244<br>
-        3♣ = 6+, invit, förnekar 4♥/♠<br>
-        3♦ = 6+, invit, förnekar 4♥/♠<br>
-	<span style="color: red;">3♥ = 4144 13-15hcp<br>
-	3♠ = 1444 13-15hcp<br>
-	3NT= 3334/3343 13-15hcp håll i båda högfärgerna</span>
-  </td>
+<table>
+<tr><th>Bid</th><th>Meaning</th></tr>
+
+<tr>
+<td><b>Pass</b></td>
+<td>
+0–3(4) HCP.<br>
+May pass with 4 HCP and 5+♣ without a 4-card major.<br>
+Example: xx / xxx / QJx / Jxxxx – no game vs ie.<br>
+Axxx, AKxx, AK, Axx <br>
+AKx, AQxx, Axxx, Ax <br>
+AKQx, AKx, Kxx, xxx <br>
+</td>
+</tr>
+
+<tr>
+<td><b>1♦</b></td>
+<td>
+• (4)5+ HCP, no 5-card major. Hand that don't fit any other bid<br>
+</td>
+</tr>
+
+<tr>
+<td><b>1♥ / 1♠</b></td>
+<td>
+3+ HCP, 5+ cards.<br>
+May have longer minor if not GF.
+</td>
+</tr>
+
+<tr>
+<td><b>1NT</b></td>
+<td>10–12 HCP (10 great hcp - 12 bad hcp), balanced, no 4-card major.</td>
+</tr>
+
+<tr>
+<td><b>2♣</b></td>
+<td>
+5+♣ Game forcing, no 4-card major. <br>
+</td>
+</tr>
+
+<tr>
+<td><b>2♦</b></td>
+<td>
+5+♦, game forcing, no 4-card major.
+</td>
+</tr>
+
+<tr>
+<td><b>2♥</b></td>
+<td>Invitational, exactly 5♣, no 4M / no 5♦.</td>
+</tr>
+
+<tr>
+<td><b>2♠</b></td>
+<td>Invitational, exactly 5♦, no 4M, may have 5♣.</td>
+</tr>
+
+<tr>
+<td><b>2NT</b></td>
+<td>16+ hcp 3343 / 3334 / 2344 / 3244.</td>
+</tr>
+
+<tr>
+<td><b>3♣ / 3♦</b></td>
+<td>6+ cards, invitational, no 4-card major.</td>
+</tr>
+
+<tr>
+<td><b>3♥</b></td>
+<td>4144, 13–15 HCP.</td>
+</tr>
+
+<tr>
+<td><b>3♠</b></td>
+<td>1444, 13–15 HCP.</td>
+</tr>
+
+<tr>
+<td><b>3NT</b></td>
+<td> 3343 / 3334 / 2344 / 3244 (12)13–15 HCP.</td>
+</tr>
+</table>
+
+<!-- ================= 1D ================= -->
+
+<h2>Opening 1♦ = (4)5+ ♦, 12–22 HCP, (3rd/4th pos. 10-22hcp) 
+4-card ♦ only if you have 1444 and 15–16hcp – Responses</h2>
+
+<table>
+<tr><th>Bid</th><th>Meaning</th></tr>
+
+<tr>
+<td><b>Pass</b></td>
+<td>0–4 HCP. Hands that are not suitable for any bid.</td>
+</tr>
+
+<tr>
+<td><b>1♥ / 1♠</b></td>
+<td>4+ cards in the bid major, 5+ HCP, can have longer minor, only longer ♣ if not GF values.</td>
+</tr>
+
+<tr>
+<td><b>1NT</b></td>
+<td>5–10 HCP, denies 4-card major and denies 3♦. Always 5+♣. Does not promise a balanced hand.</td>
+</tr>
+
+<tr>
+<td><b>2♣</b></td>
+<td>5+♣, 13+ HCP. Game forcing (♣ invites are shown via 2NT). May include a 4-card major.</td>
+</tr>
+
+<tr>
+<td><b>2♦</b></td>
+<td>5–9 HCP, exactly 3♦, always 4+♣. Denies any 4-card major.</td>
+</tr>
+
+<tr>
+<td><b>2♥ / 2♠</b></td>
+<td>2–5 HCP, 6+ cards in the bid major (preemptive).</td>
+</tr>
+
+<tr>
+<td><b>2NT</b></td>
+<td>11–12 HCP, denies 4-card major and 3+♦. Always 5+♣. Does not promise a balanced hand.</td>
+</tr>
+
+<tr>
+<td><b>3♣</b></td>
+<td>invitational+ 3+♦ support, denies any 4-card major</td>
+</tr>
+
+<tr>
+<td><b>3♦</b></td>
+<td>4–9 HCP, 4+♦. Denies any 4-card major.</td>
+</tr>
+
+<tr>
+<td><b>3♥</b></td>
+<td>13–15 HCP 4144 </td>
+</tr>
+
+<tr>
+<td><b>3♠</b></td>
+<td>13–15 HCP 1444.</td>
+</tr>
+
+<tr>
+<td><b>3NT</b></td>
+<td>(12)13–15 HCP, distribution 3343 / 3334 stop in both Majors.(if you don't have stop in Both Majors bid 3♣)</td>
 </tr>
 
 
-
-<tr id="1d">
-  <td>1♦</td>
-  <td>
-    (4)5+ ruter, 12–22 HCP<br>
-    4-korts ruter endast med 1444 / 4144 och 14–16 HCP
-  </td>
-  <td>
-    1♥ / 1♠ = 4+ i färgen, 4+ HCP, kan ha längre ♣ om ej utgångskrav<br>
-    1NT = 4–9 HCP, förnekar 4♥/♠ / 3♦ så 6+ klöver om inte 3325, lovar inte jämn hand<br>
-    2♣ = 4+♣ GF (kan ha 4♥/♠, men då 5+♣)<br>
-    2♦ = 3-stöd 6–9 HCP / 4-stöd 4–5 HCP (båda förnekar 4♥/♠)<br>
-    2♥ / 2♠ = 6+ i färgen, 0–5 HCP<br>
-    2NT = invit, förnekar 4♥/♠ / 3♦ så 6+ klöver om inte 3325, lovar inte jämn hand<br>
-    3♣ = invit+, minst 3-stöd, förnekar 4♥/♠, lovar inte klöver<br>
-    3♦ = 4-stöd, 6–9 HCP, förnekar 4♥/♠
-  </td>
-</tr>
+</table>
 
 
 
 
-
-
-    <tr id="1h">
-  <td>1♥</td>
-  <td>5+ hjärter, 12–19 HCP</td>
-  <td>
-    1♠ = 4+ ♠, 6+ HCP, kan ha längre lågfärg om ej utgångskrav<br>
-    1NT = 6–11 HCP, 0–2♥, 0–3♠, lovar inte jämn hand<br>
-    2♣ = 4+ ♣, utgångskrav, kan ha 4♠, men då 5+♣<br>
-    2♦ = 5+ ♦, utgångskrav, kan ha 4♠<br>
-    2♥ = 6–9 HCP, 3-stöd<br>
-    2♠ = 6+ ♠, 0–5 HCP<br>
-    2NT = 3+ stöd, utgångskrav, om bara 3♥ → förnekar 4♠<br>
-    3♣ = Bergen 6–8 HCP<br>
-    3♦ = Bergen 9–11 HCP<br>
-    3♥ = 3-stöd, invit, förnekar 4♠<br>
-    3NT = 13–15 HCP, jämn hand, 3-stöd, förnekar 4♠
-  </td>
-</tr>
-
-
-<tr id="1s">
-  <td>1♠</td>
-  <td>5+ spader, 12–19 HCP</td>
-  <td>
-    1NT = 6–11 HCP, 0–2♠, lovar inte jämn hand<br>
-    2♣ = 4+ ♣, utgångskrav, kan ha 4♥<br>
-    2♦ = 4+ ♦, utgångskrav, kan ha 4♥<br>
-    2♥ = 5+ ♥, utgångskrav<br>
-    2♠ = 6–9 HCP, 3-stöd<br>
-    2NT = 3+ stöd, utgångskrav, om bara 3♠ → förnekar 4♥<br>
-    3♣ = Bergen 6–8 HCP<br>
-    3♦ = Bergen 9–11 HCP<br>
-    3♥ = 3-kort ♠, invit, och 4+♥<br>
-    3♠ = 3-stöd, invit, 0–3♥<br>
-    3NT = 13–15 HCP, jämn hand, 3-stöd, förnekar 4♥
-  </td>
-</tr>
-
-    </tr>
-
-    <tr id="1nt">
-  <td>1NT</td>
-  <td>14–16 HCP, balanserad, förnekar 5-korts högfärg</td>
-  <td>
-    2♣ = Stayman<br>
-    2♦ = Transfer till ♥<br>
-    2♥ = Transfer till ♠<br>
-    2♠ = <br>
-    2NT = <br>
-    3♣ / 3♦ / 3♥ / 3♠ = <br>
-    3NT = Slutbud (ingen slam-invit)
-  </td>
-</tr>
-
-
-    <tr id="2c">
-  <td>2♣</td>
-  <td>20+ HCP och 5+ högfärg / utgångskrav</td>
-  <td>
-    2♦ = 0–4 HCP <br>
-         eller 5+ HCP med ojämn hand och ingen 5-korts högfärg <br>
-         eller 8+ HCP balanserad hand (ingen 5-korts högfärg)<br>
-    2♥ = 5+ ♥, 5+ HCP<br>
-    2♠ = 5+ ♠, 5+ HCP<br>
-    2NT = 5–7 HCP, balanserad hand
-  </td>
-</tr>
-
-
-    <tr id="2d">
-      <td>2♦</td>
-      <td></td>
-      <td></td>
-    </tr>
-
-   
-
-<tr id="2hs">
-  <td>2♥ / 2♠</td>
-  <td>(5)6+ kort, (6)8–11 HCP</td>
-  <td>
-    2NT = i Ozon Ogust, i Zon = frågar efter kortfärg
-  </td>
-</tr>
-
-
-    <tr id="2nt">
-  <td>2NT</td>
-  <td>22–24 HCP, kan <strong> inte </strong> ha 5-korts högfärg</td>
-  <td>
-    Stayman + transfers
-  </td>
-</tr>
-
-  </table>
-
-  <h2 id="konventioner">Konventioner</h2>
-  <p>Kommer senare</p>
-
-  <h2 id="utspel">Utspel & markeringar</h2>
-  <p>Kommer senare.</p>
 
 </main>
 
 <footer>
-  © 2025 Bridge System
+© 2025 Bridge System
 </footer>
 
 </body>
